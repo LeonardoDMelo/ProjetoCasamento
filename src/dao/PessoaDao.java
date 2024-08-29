@@ -92,7 +92,7 @@ public class PessoaDao {
 
 
     public  PessoaDao(){
-        LocalDateTime dataAtual = LocalDateTime.now();
+        //LocalDateTime dataAtual = LocalDateTime.now();
         LocalDateTime dataCriacao = LocalDateTime.now();
 
         Pessoa pessoa1 = new Pessoa();
