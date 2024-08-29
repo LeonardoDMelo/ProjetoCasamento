@@ -70,7 +70,7 @@ public class PessoaDao {
     }
 
     public boolean remover(String nome){
-        for (i = 0;i < pessoa.length;i++)
+        for (int i = 0;i < pessoa.length;i++)
         {
             if (pessoa[i] != null && pessoa[i].getNome().equals(nome)){
                 pessoa[i] = null;
@@ -96,6 +96,15 @@ public class PessoaDao {
         LocalDateTime dataCriacao = LocalDateTime.now();
 
         Pessoa pessoa1 = new Pessoa();
+
+
+        pessoa1.setNome("Leonardo");
+        pessoa1.setNascimento("16/09/1999");
+        pessoa1.setTelefone("(34)991761513");
+        pessoa1.setDataCriacao(dataCriacao);
+
+        adiciona(pessoa1);
+
     }
 
 }
