@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 public class Pessoa {
     private static long serial;
     private long id;
-    private String nome;
+    private String nomePessoa;
     private String nascimento;
     private String telefone;
     private LocalDateTime dataCriacao;
@@ -20,11 +20,11 @@ public class Pessoa {
         return id;
     }
 
-    public String getNome(){
+    public String getNomePessoa(){
         return nome;
     }
 
-    public void setNome(String nome){
+    public void setNomePessoa(String nome){
         this.nome = nome;
     }
 
