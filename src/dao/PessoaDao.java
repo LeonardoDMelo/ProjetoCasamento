@@ -50,8 +50,8 @@ public class PessoaDao {
 
     public  boolean alterarNome(String nome, String novoNome){
         for (Pessoa pessoas : pessoa){
-            if (pessoas != null && pessoas.getNome().equals(nome)){
-                pessoas.setNome(novoNome);
+            if (pessoas != null && pessoas.getNomePessoa().equals(nome)){
+                pessoas.setNomePessoa(novoNome);
                 LocalDateTime dataAtual = LocalDateTime.now();
 
                 pessoas.setDataModificacao(dataAtual);
@@ -62,7 +62,7 @@ public class PessoaDao {
 
     Pessoa buscarPorNome(String nome){
         for (Pessoa pessoas : pessoa){
-            if(pessoas != null && pessoas.getNome().equals(nome)){
+            if(pessoas != null && pessoas.getNomePessoa().equals(nome)){
                 return pessoas;
             }
         }
@@ -72,7 +72,7 @@ public class PessoaDao {
     public boolean remover(String nome){
         for (int i = 0;i < pessoa.length;i++)
         {
-            if (pessoa[i] != null && pessoa[i].getNome().equals(nome)){
+            if (pessoa[i] != null && pessoa[i].getNomePessoa().equals(nome)){
                 pessoa[i] = null;
                 return true;
 
@@ -98,7 +98,7 @@ public class PessoaDao {
         Pessoa pessoa1 = new Pessoa();
 
 
-        pessoa1.setNome("Leonardo");
+        pessoa1.setNomePessoa("Leonardo");
         pessoa1.setNascimento("16/09/1999");
         pessoa1.setTelefone("(34)991761513");
         pessoa1.setDataCriacao(dataCriacao);

@@ -21,11 +21,11 @@ public class Pessoa {
     }
 
     public String getNomePessoa(){
-        return nome;
+        return nomePessoa;
     }
 
     public void setNomePessoa(String nome){
-        this.nome = nome;
+        this.nomePessoa = nomePessoa;
     }
 
     public String getNascimento(){
