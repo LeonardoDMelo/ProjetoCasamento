@@ -36,7 +36,7 @@ public class PessoaDao {
         for (Pessoa pessoas : pessoa){
             if (pessoas != null){
                 System.out.println("ID: " +pessoas.getId());
-                System.out.println("Nome: "+pessoas.getNome());
+                System.out.println("Nome: "+pessoas.getNomePessoa());
                 System.out.println("Nascimento: "+pessoas.getNascimento());
                 System.out.println("Telefone: "+pessoas.getTelefone());
                 System.out.println("------------------------");

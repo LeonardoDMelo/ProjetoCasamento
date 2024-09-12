@@ -7,7 +7,7 @@ public class Pessoa {
     private static long serial;
     private long id;
     private String nomePessoa;
-    private String nascimento;
+    private LocalDateTime nascimento;
     private String telefone;
     private LocalDateTime dataCriacao;
     private LocalDateTime dataModificacao;
@@ -28,7 +28,7 @@ public class Pessoa {
         this.nomePessoa = nomePessoa;
     }
 
-    public String getNascimento(){
+    public LocalDateTime getNascimento(){
         return nascimento;
     }
 
