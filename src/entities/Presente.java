@@ -73,5 +73,7 @@ valor
 PESSOA
 dataCriacao
 dataModificacao
-
+O campo pessoa fica vazio até que alguém selecione o presente.
+ Os convidados podem ver os presentes e ver quem já escolheu um dado presente.
+ Mostre uma tela simples ilustrando a compra de um presente.
 * */
